@@ -1,10 +1,17 @@
 <script setup>
+import BlogItem from './BlogItem.vue';
+
+// /home/annfox/interno-vue/src/components/BlogPage.vue
+
 defineProps({
   msg: {
     type: String,
     required: true
-  }
-})
+  },
+  
+    });
+
+
 // const VueApp = {
 //             data() {
 //                 return {
@@ -93,78 +100,9 @@ defineProps({
                when
                lookings at its layouts the points of using.</p>
        </div>
-
-       <!-- <div id='app' class="blog__items">
-           <div class="blog__item" v-for="articl in articles" :key="articl.id">
-               <div class="blog__item__top">
-                   <img :src="articl.url" alt="Kitchan Design">
-                   <div class="blog__item__tag">
-                       <p>{{articl.tag}}</p>
-                   </div>
-               </div>
-
-               <div class="blog__item__bottom">
-                   <h3 class="blog__item__heading">{{articl.heading}}</h3>
-                   <div class="blog__item__date">
-                       <p>{{articl.date}} </p>
-                       <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                           <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                           <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                               stroke-linecap="round" stroke-linejoin="round" />
-                       </svg>
-                   </div>
-               </div>
-           </div> -->
-
-           <!-- <div class="blog__item">
-
-               <div class="blog__item__top">
-                   <img src="images/blog-img-2.png" alt="">
-                   <div class="blog__item__tag">
-                       <p>KLiving Design</p>
-                   </div>
-               </div>
-
-               <div class="blog__item__bottom">
-                   <h3 class="blog__item__heading">Low Cost Latest Invented Interior Designing<br>Ideas</h3>
-                   <div class="blog__item__date">
-                       <p>22 December,2022 </p>
-                       <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                           <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                           <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                               stroke-linecap="round" stroke-linejoin="round" />
-                       </svg>
-                   </div>
-
-               </div>
-
-           </div>
-           <div class="blog__item">
-
-               <div class="blog__item__top">
-                   <img src="images/blog-img-3.png" alt="">
-                   <div class="blog__item__tag">
-                       <p>Interior Design</p>
-                   </div>
-               </div>
-
-               <div class="blog__item__bottom">
-                   <h3 class="blog__item__heading">Best For Any Office & Business Interior
-                       Solution</h3>
-                   <div class="blog__item__date">
-                       <p>25 December,2022 </p>
-                       <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                           <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                           <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                               stroke-linecap="round" stroke-linejoin="round" />
-                       </svg>
-                   </div>
-
-               </div>
-
-           </div> -->
-       <!-- </div> -->
-   </section>
+       <BlogItem/>
+          </section>
+   
 </template>
 
 <style>
