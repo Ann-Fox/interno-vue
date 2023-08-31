@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
   const detailes = [
-           {  tag: 'Kitchan Design',
+           {  tag: 'Kitchan',
               head: 'Let`s Get Solution for Building Construction Work',
               urlOne: '/images/blog-datails-kitchen-1.jpg',
               date: '26 December,2022',
@@ -84,7 +84,7 @@ currentContents.value = Object.values(detailes).filter((el) => el.tag === tag);
 <template>
        <div class="blog__news">
             
-            <div class="blog__news__item" v-for="detaile in detailes" :key="detaile.id">
+            <div class="blog__news__item" v-for="detaile in currentContents" :key="detaile.id">
                 <h1>{{ detaile.head }}</h1>
                 <img :src="detaile.urlOne" :alt="detaile.tag">
                 <div class="blog__item__date">
