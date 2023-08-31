@@ -1,108 +1,55 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  },
-  data() {
-    return {
-         articles: [
+  const articles = [
            {
-              url: '@/assets/images/blog-img-1.png',
+              url: '/images/blog-img-1.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
             },
             {
-              url: '@/assets/images/blog-img-2.png',
+              url: '/images/blog-img-2.png',
               tag: 'Living Design',
               heading: 'Low Cost Latest Invented Interior Designing Ideas.',
               date: '22 December,2022'
             },
             {
-              url: '@/assets/images/blog-img-3.png',
+              url: '/images/blog-img-3.png',
               tag: 'Interior Design',
               heading: 'Best For Any Office & Business Interior Solution',
               date: '25 December,2022'
             },
             {
-              url: '@/assets/images/blog-img-4.png',
+              url: '/images/blog-img-4.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
             },
             {
-              url: '@/assets/images/blog-img-5.png',
+              url: '/images/blog-img-5.png',
               tag: 'Living Design',
               heading: 'Low Cost Latest Invented Interior Designing Ideas.',
               date: '22 December,2022'
             },
             {
-              url: '@/assets/images/blog-img-6.png',
+              url: '/images/blog-img-6.png',
               tag: 'Interior Design',
               heading: 'Best For Any Office & Business Interior Solution',
               date: '25 December,2022'
             },
-         ]
-         };
-    }
-})
-// const VueApp = {
-//             data() {
-//                 return {
-//                     articles: [
-//                         {
-//                             url: 'images/blog-img-1.png',
-//                             tag: 'Kitchan Design',
-//                             heading: 'Let`s Get Solution For Building Construction Work',
-//                             date: '26 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-2.png',
-//                             tag: 'Living Design',
-//                             heading: 'Low Cost Latest Invented Interior Designing Ideas.',
-//                             date: '22 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-3.png',
-//                             tag: 'Interior Design',
-//                             heading: 'Best For Any Office & Business Interior Solution',
-//                             date: '25 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-4.png',
-//                             tag: 'Kitchan Design',
-//                             heading: 'Let`s Get Solution For Building Construction Work',
-//                             date: '26 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-5.png',
-//                             tag: 'Living Design',
-//                             heading: 'Low Cost Latest Invented Interior Designing Ideas.',
-//                             date: '22 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-6.png',
-//                             tag: 'Interior Design',
-//                             heading: 'Best For Any Office & Business Interior Solution',
-//                             date: '25 December,2022'
-//                         },
-//                     ],
-//                 };
-//             },
-//         };
+         ];
 </script>
+
 <template>
        <div class="blog__items" >
            <div class="blog__item" v-for="article in articles" :key="article.id">
                <div class="blog__item__top">
-                   <img :src="article.url" alt={{article.tag}}>
+                   <img :src="article.url" :alt='article.tag'>
                    <div class="blog__item__tag">
                        <p>{{article.tag}}</p>
                    </div>
                </div>
 
-               <!-- <div class="blog__item__bottom">
+               <div class="blog__item__bottom">
                    <h3 class="blog__item__heading">{{article.heading}}</h3>
                    <div class="blog__item__date">
                        <p>{{article.date}} </p>
@@ -112,7 +59,7 @@ defineProps({
                                stroke-linecap="round" stroke-linejoin="round" />
                        </svg>
                    </div>
-               </div> -->
+               </div>
            </div> 
         </div>
 </template>

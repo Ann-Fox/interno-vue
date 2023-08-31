@@ -17,7 +17,8 @@ import { RouterLink, RouterView } from 'vue-router'
         <div class="header__nav">
             <RouterLink to="/">Home</RouterLink>
             <a href="blog.html">Project</a>
-            <RouterLink to="/blog">Blog</RouterLink>
+            <RouterLink to="/blog">Blog</RouterLink> 
+            <RouterLink to="/details">News</RouterLink>
         </div>
     </header>
   </header>

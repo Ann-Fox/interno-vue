@@ -30,7 +30,7 @@ defineProps({
         </div>
         <div class="project__items">
             <div class="project__item">
-                <img src="@/assets/images/project-1.png" alt="">
+                <img src="/images/project-1.png" alt="">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -45,7 +45,7 @@ defineProps({
 
             </div>
             <div class="project__item">
-                <img src="@/assets/images/project-2.png" alt="">
+                <img src="/images/project-2.png" alt="">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -60,7 +60,7 @@ defineProps({
 
             </div>
             <div class="project__item">
-                <img src="@/assets/images/project-3.png" alt="">
+                <img src="/images/project-3.png" alt="">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -75,7 +75,7 @@ defineProps({
 
             </div>
             <div class="project__item">
-                <img src="@/assets/images/project-4.png" alt="">
+                <img src="/images/project-4.png" alt="">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -130,7 +130,7 @@ defineProps({
             <div class="blog__item">
 
                 <div class="blog__item__top">
-                    <img src="@/assets/images/blog-img-1.png" alt="">
+                    <img src="/images/blog-img-1.png" alt="">
                     <div class="blog__item__tag">
                         <p>Kitchan Design</p>
                     </div>
@@ -153,7 +153,7 @@ defineProps({
             <div class="blog__item">
 
                 <div class="blog__item__top">
-                    <img src="@/assets/images/blog-img-2.png" alt="">
+                    <img src="/images/blog-img-2.png" alt="">
                     <div class="blog__item__tag">
                         <p>KLiving Design</p>
                     </div>
@@ -176,7 +176,7 @@ defineProps({
             <div class="blog__item">
 
                 <div class="blog__item__top">
-                    <img src="@/assets/images/blog-img-3.png" alt="">
+                    <img src="/images/blog-img-3.png" alt="">
                     <div class="blog__item__tag">
                         <p>Interior Design</p>
                     </div>
@@ -199,8 +199,6 @@ defineProps({
             </div>
         </div>
     </section>
-
-    
 </template>
 
 <style scoped>

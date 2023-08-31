@@ -1,61 +1,12 @@
 <script setup>
-import BlogItem from './BlogItem.vue';
-
-// /home/annfox/interno-vue/src/components/BlogPage.vue
+import BlogItems from './BlogItems.vue';
 
 defineProps({
   msg: {
     type: String,
     required: true
-  },
-  
-    });
-
-
-// const VueApp = {
-//             data() {
-//                 return {
-//                     articles: [
-//                         {
-//                             url: 'images/blog-img-1.png',
-//                             tag: 'Kitchan Design',
-//                             heading: 'Let`s Get Solution For Building Construction Work',
-//                             date: '26 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-2.png',
-//                             tag: 'Living Design',
-//                             heading: 'Low Cost Latest Invented Interior Designing Ideas.',
-//                             date: '22 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-3.png',
-//                             tag: 'Interior Design',
-//                             heading: 'Best For Any Office & Business Interior Solution',
-//                             date: '25 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-4.png',
-//                             tag: 'Kitchan Design',
-//                             heading: 'Let`s Get Solution For Building Construction Work',
-//                             date: '26 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-5.png',
-//                             tag: 'Living Design',
-//                             heading: 'Low Cost Latest Invented Interior Designing Ideas.',
-//                             date: '22 December,2022'
-//                         },
-//                         {
-//                             url: 'images/blog-img-6.png',
-//                             tag: 'Interior Design',
-//                             heading: 'Best For Any Office & Business Interior Solution',
-//                             date: '25 December,2022'
-//                         },
-//                     ],
-//                 };
-//             },
-//         };
+  }, 
+});
 </script>
 <template>
 
@@ -100,7 +51,7 @@ defineProps({
                when
                lookings at its layouts the points of using.</p>
        </div>
-       <BlogItem/>
+       <BlogItems/>
           </section>
    
 </template>
