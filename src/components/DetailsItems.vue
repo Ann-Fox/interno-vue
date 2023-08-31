@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
   const detailes = [
            {  tag: 'Kitchan Design',
               head: 'Let`s Get Solution for Building Construction Work',
@@ -72,19 +73,12 @@
               pLast: 'Bathroom sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             },
          ];
-const currentContents = [];
+const currentContents = ref(detailes);
 const buttonsTag = ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bathroom'];
 
-created() {
-        currentContents = detailes;
-    };
-methods: {
-        filterArticles(tag) {
-            console.log(currentContents);
-            currentContents = Object.values(detailes).filter((el) => el.tag === tag);
-        };
-    };
-
+const filterArticles = (tag) => {
+currentContents.value = Object.values(detailes).filter((el) => el.tag === tag);
+};
 </script>
 
 <template>
@@ -129,9 +123,7 @@ methods: {
 
         <aside class="blog__asaid">
             <h3>Tags</h3>
-            
-                <button @click="filterArticles(tag)" v-for="buttonTag in buttonsTag" :key="buttonTag.id">{{ buttonTag }}</button>
-           
+            <button @click="filterArticles(tag)" v-for="buttonTag in buttonsTag" :key="buttonTag.id">{{ buttonTag }}</button>
         </aside>
 </template>
 
