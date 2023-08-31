@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
   const detailes = [
-           {  tag: 'Kitchan',
+           {  tag: 'Kitchen',
               head: 'Let`s Get Solution for Building Construction Work',
               urlOne: '/images/blog-datails-kitchen-1.jpg',
               date: '26 December,2022',
@@ -73,18 +73,18 @@ import { ref } from 'vue';
               pLast: 'Bathroom sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             },
          ];
-const currentContents = ref(detailes);
+const currentContents = ref([detailes[0]]);
 const buttonsTag = ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bathroom'];
 
-const filterArticles = (tag) => {
-currentContents.value = Object.values(detailes).filter((el) => el.tag === tag);
+const filterArticles = (btnTag) => {
+currentContents.value = detailes.filter((el) => el.tag === btnTag);
 };
 </script>
 
 <template>
        <div class="blog__news">
             
-            <div class="blog__news__item" v-for="detaile in currentContents" :key="detaile.id">
+            <div class="blog__news__item" v-for="detaile in currentContents" :key="detaile.tag">
                 <h1>{{ detaile.head }}</h1>
                 <img :src="detaile.urlOne" :alt="detaile.tag">
                 <div class="blog__item__date">
@@ -123,7 +123,7 @@ currentContents.value = Object.values(detailes).filter((el) => el.tag === tag);
 
         <aside class="blog__asaid">
             <h3>Tags</h3>
-            <button @click="filterArticles(tag)" v-for="buttonTag in buttonsTag" :key="buttonTag.id">{{ buttonTag }}</button>
+            <button @click="filterArticles(buttonTag)" v-for="buttonTag in buttonsTag" :key="buttonTag">{{ buttonTag }}</button>
         </aside>
 </template>
 
