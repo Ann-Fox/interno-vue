@@ -66,7 +66,7 @@ import { RouterLink } from 'vue-router'
     <div class="footer__item">
       <h3>Services</h3>
       <div class="footer__nav">
-        <a href="#">Lorem</a>
+        <RouterLink to="/homework10">Homework</RouterLink>
         <a href="#">Lorem</a>
         <a href="#">Lorem</a>
       </div>
