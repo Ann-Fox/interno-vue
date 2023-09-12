@@ -126,7 +126,14 @@ currentContents.value = projects.filter((el) => el.tag === btnTag);
                     </svg>
                 </div>
             </div>
-        </div>    
+        </div>  
+        
+        <div class="page">
+          <button>01</button>
+          <button>02</button>
+          <button>03</button>
+          <button>></button>
+        </div>
 </template>
 
 <style scoped>
@@ -187,7 +194,6 @@ p {
 .blog__asaid button:hover {
     background: #CDA274;
     cursor: pointer;
-
 }
 .project__items {
   display: grid;
@@ -212,5 +218,24 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.page {
+  display: flex;
+  gap: 20px;
+}
+.page button {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #CDA274;
+}
+
+.page button:hover {
+  background-color: #F4F0EC;
+  border: none;
 }
 </style>
