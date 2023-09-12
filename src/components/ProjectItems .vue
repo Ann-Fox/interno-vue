@@ -99,7 +99,7 @@ import { ref } from 'vue';
             },
          ];
 const currentContents = ref([projects[0]]);
-const buttonsTag = ['Kitchan', 'Bedroom', 'Living Area', 'Bathroom'];
+const buttonsTag = ['Bedroom', 'Kitchan', 'Living Area', 'Bathroom'];
 
 const filterArticles = (btnTag) => {
 currentContents.value = projects.filter((el) => el.tag === btnTag);
@@ -111,8 +111,8 @@ currentContents.value = projects.filter((el) => el.tag === btnTag);
             <button @click="filterArticles(buttonTag)" v-for="buttonTag in buttonsTag" :key="buttonTag">{{ buttonTag }}</button>
         </aside>
 
-        <div class="project__items" v-for="project in currentContents" :key="project.tag">
-            <div class="project__item" >
+        <div class="project__items" >
+            <div class="project__item" v-for="project in currentContents" :key="project.tag">
                 <img :src="project.urlImg" :alt="project.tag">
                 <div class="project__items__content">
                     <div class="project__items__text">
