@@ -59,14 +59,14 @@ import { RouterLink } from 'vue-router'
       <h3>Pages</h3>
       <div class="footer__nav">
         <RouterLink to="/">Home</RouterLink>
-        <a href="#">Project</a>
+        <RouterLink to="/project">Project</RouterLink>
         <RouterLink to="/blog">Blog</RouterLink>
       </div>
     </div>
     <div class="footer__item">
       <h3>Services</h3>
       <div class="footer__nav">
-        <RouterLink to="/homework10">Homework</RouterLink>
+        <RouterLink to="/homework10">Homework_10</RouterLink>
         <a href="#">Lorem</a>
         <a href="#">Lorem</a>
       </div>

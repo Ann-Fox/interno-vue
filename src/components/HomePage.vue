@@ -22,12 +22,14 @@ defineProps({
             </button>
         </div>
     </section>
+
     <section class="project center">
         <div class="project__heading">
             <h2>Follow Our Projects</h2>
             <p>It is a long established fact that a reader will be distracted by the of readable content of page
                 lookings at its layouts points.</p>
         </div>
+        
         <div class="project__items">
             <div class="project__item">
                 <img src="/images/project-1.png" alt="">
@@ -91,6 +93,7 @@ defineProps({
             </div>
         </div>
     </section>
+
     <section class="counter center">
         <div class="counter__item">
             <div class="counter__content">
