@@ -127,7 +127,7 @@ currentContents.value = detailes.filter((el) => el.tag === btnTag);
         </aside>
 </template>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -166,6 +166,7 @@ p {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
+
 
 .blog__items {
   display: grid;

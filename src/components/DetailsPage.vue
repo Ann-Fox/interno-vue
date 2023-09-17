@@ -14,16 +14,12 @@ defineProps({
     </section>
 
     <section class="blog center">
-
       <DetailsItems/>
-
-       
-
     </section>
 
 </template>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -80,8 +76,9 @@ p {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
+  grid-column-gap: 52px;
   grid-row-gap: 0px;
+  align-items: start;
 }
 .blog__news h1 {
   color: #292f36;

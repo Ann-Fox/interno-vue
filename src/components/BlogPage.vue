@@ -56,7 +56,7 @@ defineProps({
    
 </template>
 
-<style>
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -138,6 +138,7 @@ p {
 }
 .blog__news__item {
   display: flex;
+  flex-direction: row;
   gap: 65px;
   border-radius: 62px;
   border: 1px solid #e7e7e7;
