@@ -1,14 +1,22 @@
 <script setup>
 import { RouterView } from 'vue-router'
-// import { FooterItem } from './components/FooterItem.vue'
+import HeaderItem from './components/HeaderItem.vue';
+// import HomeView from './components/HomePage.vue';
+import FooterItem from './components/FooterItem.vue'
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
- 
+  <div>
+    <!-- <HomeView/> -->
+ <HeaderItem/>
+
+ <!-- <RouterLink to="/">HomeView</RouterLink> -->
   <RouterView />
 
- <!-- <FooterItem></FooterItem> -->
+ <FooterItem/> 
+  </div>
+
 </template>
 
 <style scoped>

@@ -1,7 +1,6 @@
 
 <script setup>
-import FooterItem from './FooterItem.vue';
-import HeaderItem from './HeaderItem.vue'
+
 
 const ProductsDetail = [
     {
@@ -32,7 +31,6 @@ return '$' + product.price
 </script>
 
 <template>
-  <HeaderItem></HeaderItem>
 
         <div class="item" v-for="product in ProductsDetail" :key="product.id">
             <div>{{ product.name }}</div>
@@ -41,7 +39,6 @@ return '$' + product.price
             <div v-else>Out of stock</div>
         </div>
 
-        <FooterItem></FooterItem>
 
 </template>
 
