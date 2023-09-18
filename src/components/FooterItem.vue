@@ -6,8 +6,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <footer class="footer center">
     <div class="footer__item">
-      <div class="header__logo">
-        <svg
+       <RouterLink class="header__logo" to="/"> <svg
           xmlns="http://www.w3.org/2000/svg"
           width="34"
           height="34"
@@ -20,7 +19,7 @@ import { RouterLink } from 'vue-router'
           />
         </svg>
         <h3 class="header__title">Interno</h3>
-      </div>
+      </RouterLink>
 
       <p class="footer__item__text">
         It is a long established fact that a reader will be distracted lookings.
@@ -67,7 +66,7 @@ import { RouterLink } from 'vue-router'
       <h3>Services</h3>
       <div class="footer__nav">
         <RouterLink to="/homework10">Homework_10</RouterLink>
-        <a href="#">Lorem</a>
+        <RouterLink to="/project_details">ProjectDetails</RouterLink>
         <a href="#">Lorem</a>
       </div>
     </div>
@@ -127,13 +126,19 @@ p {
   gap: 101px;
   padding-bottom: 134px;
 }
+
+.header__logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .footer h3 {
-  color: #292f36;
-  font-family: DM Serif Display;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 31.25px */
+  color: #292F36;
+font-family: DM Serif Display;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 50px */
 }
 .footer__item {
   display: flex;

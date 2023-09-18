@@ -102,8 +102,8 @@ p {
   background-repeat: no-repeat;
   background-origin: content-box;
   height: 356px;
-  padding-left: calc(50% - 960px);
-  padding-right: calc(50% - 960px);
+  /* padding-left: calc(50% - 960px);
+  padding-right: calc(50% - 960px); */
   display: flex;
   justify-content: center;
   align-items: flex-end;

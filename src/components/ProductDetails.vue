@@ -42,7 +42,7 @@ return '$' + product.price
 
 </template>
 
-<style>
+<style scoped>
     .item {
         display: flex;
         gap: 20px;
