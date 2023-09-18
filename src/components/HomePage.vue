@@ -32,7 +32,7 @@ defineProps({
         
         <div class="project__items">
             <div class="project__item">
-                <img src="/images/project-1.png" alt="">
+                <img src="/images/project-1.png" alt="project-1">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -47,7 +47,7 @@ defineProps({
 
             </div>
             <div class="project__item">
-                <img src="/images/project-2.png" alt="">
+                <img src="/images/project-2.png" alt="project-2">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -62,7 +62,7 @@ defineProps({
 
             </div>
             <div class="project__item">
-                <img src="/images/project-3.png" alt="">
+                <img src="/images/project-3.png" alt="project-3">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
@@ -77,7 +77,7 @@ defineProps({
 
             </div>
             <div class="project__item">
-                <img src="/images/project-4.png" alt="">
+                <img src="/images/project-4.png" alt="project-4">
                 <div class="project__items__content">
                     <div class="project__items__text">
                         <h4 class="project__items__title">Modern Kitchan</h4>
