@@ -110,8 +110,8 @@ export default {
         background: #C4C4C4;
     }
 
-    .swiper-pagination-bullet {
-        width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
-    height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
-    }
+    // .swiper-pagination-bullet {
+    //     width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 8px));
+    // height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 8px));
+    // }
 </style>
