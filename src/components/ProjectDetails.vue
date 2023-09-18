@@ -27,15 +27,15 @@
             >
                 <swiper-slide>
                 <div class="swiper-zoom-container">
-                    <img src="public/images/project-details-slider-1.png" />
+                    <img src="@/assets/images/project-details-slider-1.png" />
                 </div> </swiper-slide>
                 <swiper-slide>
                 <div class="swiper-zoom-container">
-                    <img src="public/images/project-details-slider-2.png" />
+                    <img src="@/assets/images/project-details-slider-2.png" />
                 </div> </swiper-slide>
                 <swiper-slide>
                 <div class="swiper-zoom-container">
-                    <img src="public/images/project-details-slider-3.png" />
+                    <img src="@/assets/images/project-details-slider-3.png" />
                 </div> </swiper-slide>
             </swiper>
             </div> 
