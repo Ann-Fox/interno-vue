@@ -13,7 +13,7 @@
             </router-link>
         </div>
         <div class="notfound__img">
-            <img src="@/assets/images/not-found.png" alt="">
+            <img src="@/assets/images/not-found.png" alt="not found 404">
         </div>
     </div>
 </template>
