@@ -1,27 +1,43 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import IconLogo from './icons/IconLogo.vue';
+
+const links = [
+                    {
+                        id: 1,
+                        title: 'Home',
+                        url: '/',
+                    },
+                    {
+                        id: 2,
+                        title: 'Project',
+                        url: '/project',
+                    },
+                    {
+                        id: 3,
+                        title: 'Blog',
+                        url: '/blog',
+                    },
+                    {
+                        id: 4,
+                        title: 'Details',
+                        url: '/details',
+                    },
+]
 </script>
 
 <template>
      <header>
     <header class="header center">
-        <!-- <a class="header__logo" href="index.html"> -->
-          <RouterLink to="/" class="header__logo">  <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
-                <path
-                    d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
-                    fill="#CDA274" />
-            </svg>
+          <RouterLink to="/" class="header__logo">  
+            <IconLogo/>
             <h3 class="header__title">Interno</h3>
-
           </RouterLink>
-          
-          <!-- </a> -->
-        <div class="header__nav">
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/project">Project</RouterLink>
-            <RouterLink to="/blog">Blog</RouterLink> 
-            <RouterLink to="/details">News</RouterLink>
-        </div>
+
+            <div class="header__nav">
+        <RouterLink :to="link.url" v-for="link in links" :key="link.id">{{link.title}}</RouterLink>
+    </div>
+
     </header>
   </header>
 </template>

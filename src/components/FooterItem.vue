@@ -1,23 +1,31 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import IconLogo from './icons/IconLogo.vue';
 
+const linksPages = [
+  {
+      id: 1,
+      title: 'Home',
+      url: '/',
+  },
+  {
+      id: 2,
+      title: 'Project',
+      url: '/project',
+  },
+  {
+      id: 3,
+      title: 'Blog',
+      url: '/blog',
+  },
+]
 </script>
 
 <template>
   <footer class="footer center">
     <div class="footer__item">
-       <RouterLink class="header__logo" to="/"> <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="34"
-          height="34"
-          viewBox="0 0 34 34"
-          fill="none"
-        >
-          <path
-            d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
-            fill="#CDA274"
-          />
-        </svg>
+       <RouterLink class="header__logo" to="/">
+        <IconLogo/>
         <h3 class="header__title">Interno</h3>
       </RouterLink>
 
@@ -55,15 +63,14 @@ import { RouterLink } from 'vue-router'
     </div>
 
     <div class="footer__item">
-      <h3>Pages</h3>
+      <h3 class="footer__item__head">Pages</h3>
       <div class="footer__nav">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/project">Project</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink :to="link.url" v-for="link in linksPages" :key="link.id">{{link.title}}</RouterLink>
+
       </div>
     </div>
     <div class="footer__item">
-      <h3>Services</h3>
+      <h3 class="footer__item__head">Services</h3>
       <div class="footer__nav">
         <RouterLink to="/homework10">Homework_10</RouterLink>
         <RouterLink to="/project-details">ProjectDetails</RouterLink>
@@ -71,7 +78,7 @@ import { RouterLink } from 'vue-router'
       </div>
     </div>
     <div class="footer__item">
-      <h3>Contact</h3>
+      <h3 class="footer__item__head">Contact</h3>
       <div class="footer__item__contact">
         <address>55 East Birchwood Ave. Brooklyn, New York 11201</address>
         <main>contact@interno.com</main>
@@ -81,30 +88,11 @@ import { RouterLink } from 'vue-router'
   </footer>
 </template>
 
-<style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'DM Serif Display', serif;
-}
-
-h2 {
-  color: #292f36;
-  text-align: center;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 62.5px */
-  letter-spacing: 1px;
-}
-
-a {
+<style lang="scss" scoped>
+ a {
   text-decoration: none;
   font-family: 'Jost', sans-serif;
-}
+} 
 
 p {
   color: #4d5053;
@@ -112,69 +100,68 @@ p {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 33px */
+  line-height: 150%; 
   letter-spacing: 0.22px;
 }
 
-.center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+.header {
+  &__logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  }
+  &__title {
+    font-size: 40px;
+  }
 }
-
 .footer {
   display: flex;
   gap: 101px;
   padding-bottom: 134px;
-}
-
-.header__logo {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.footer h3 {
-  color: #292F36;
-font-family: DM Serif Display;
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 125%; /* 50px */
-}
-.footer__item {
-  display: flex;
-  flex-direction: column;
-}
-.footer__item__text {
-  margin-top: 31px;
-  margin-bottom: 18px;
-}
-.footer__item__social svg:first-child {
-  margin-right: 54px;
-}
-.footer__item__contact {
-  color: #4d5053;
-  font-family: Jost;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%; /* 33px */
-  letter-spacing: 0.22px;
-  margin-top: 26px;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.footer__nav {
-  display: flex;
-  flex-direction: column;
-}
-.footer__nav a {
-  color: #4d5053;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 300%; /* 66px */
-  letter-spacing: 0.22px;
+    h3 {
+      color: #292F36;
+      font-family: DM Serif Display;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 50px */
+    }
+    &__item {
+      &__head {
+      font-size: 25px;
+      }
+        &__text {
+        margin-top: 31px;
+        margin-bottom: 18px;
+      }
+      &__social svg:first-child {
+        margin-right: 54px;
+      }
+      &__contact {
+        color: #4d5053;
+        // font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 33px */
+        letter-spacing: 0.22px;
+        margin-top: 26px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+    &__nav {
+      display: flex;
+      flex-direction: column;
+    }
+    &__nav a {
+      color: #4d5053;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 300%; /* 66px */
+      letter-spacing: 0.22px;
+    }
 }
 </style>
