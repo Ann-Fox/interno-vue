@@ -1,96 +1,95 @@
 <script>
-
   export default {
         data() {
             return {
               articles: [
            {
               id: 1,
-              url: '/images/blog-img-1.png',
+              url: '/interno-vue/images/blog-img-1.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
             },
             {
               id: 2,
-              url: '/images/blog-img-2.png',
+              url: '/interno-vue/images/blog-img-2.png',
               tag: 'Living Design',
               heading: 'Low Cost Latest Invented Interior Designing Ideas.',
               date: '22 December,2022'
             },
             {
               id: 3,
-              url: '/images/blog-img-3.png',
+              url: '/interno-vue/images/blog-img-3.png',
               tag: 'Interior Design',
               heading: 'Best For Any Office & Business Interior Solution',
               date: '25 December,2022'
             },
             {
               id: 4,
-              url: '/images/blog-img-4.png',
+              url: '/interno-vue/images/blog-img-4.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
             },
             {
               id: 5,
-              url: '/images/blog-img-5.png',
+              url: '/interno-vue/images/blog-img-5.png',
               tag: 'Living Design',
               heading: 'Low Cost Latest Invented Interior Designing Ideas.',
               date: '22 December,2022'
             },
             {
               id: 6,
-              url: '/images/blog-img-6.png',
+              url: '/interno-vue/images/blog-img-6.png',
               tag: 'Interior Design',
               heading: 'Best For Any Office & Business Interior Solution',
               date: '25 December,2022'
             },
             {
               id: 7,
-              url: '/images/blog-img-4.png',
+              url: '/interno-vue/images/blog-img-4.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
             },
             {
               id: 8,
-              url: '/images/blog-img-5.png',
+              url: '/interno-vue/images/blog-img-5.png',
               tag: 'Living Design',
               heading: 'Low Cost Latest Invented Interior Designing Ideas.',
               date: '22 December,2022'
             },
             {
               id: 9,
-              url: '/images/blog-img-6.png',
+              url: '/interno-vue/images/blog-img-6.png',
               tag: 'Interior Design',
               heading: 'Best For Any Office & Business Interior Solution',
               date: '25 December,2022'
             },
             {
               id: 10,
-              url: '/images/blog-img-1.png',
+              url: '/interno-vue/images/blog-img-1.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
             },
             {
               id: 11,
-              url: '/images/blog-img-2.png',
+              url: '/interno-vue/images/blog-img-2.png',
               tag: 'Living Design',
               heading: 'Low Cost Latest Invented Interior Designing Ideas.',
               date: '22 December,2022'
             },
             {
               id: 12,
-              url: '/images/blog-img-3.png',
+              url: '/interno-vue/images/blog-img-3.png',
               tag: 'Interior Design',
               heading: 'Best For Any Office & Business Interior Solution',
               date: '25 December,2022'
             },
             {
               id: 13,
-              url: '/images/blog-img-4.png',
+              url: '/interno-vue/images/blog-img-4.png',
               tag: 'Kitchan Design',
               heading: 'Let`s Get Solution For Building Construction Work',
               date: '26 December,2022'
@@ -264,7 +263,7 @@ p {
     height: 52px;
     border: 1px solid #CDA274;
     cursor: pointer;
-    
+
     color: #292F36;
     font-family: Jost;
     font-size: 26px;

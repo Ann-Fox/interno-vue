@@ -3,7 +3,7 @@ import { ref } from 'vue';
   const detailes = [
            {  tag: 'Kitchen',
               head: 'Let`s Get Solution for Building Construction Work',
-              urlOne: '/images/blog-datails-kitchen-1.jpg',
+              urlOne: '/interno-vue/images/blog-datails-kitchen-1.jpg',
               date: '26 December,2022',
               heading: 'Let`s Get Solution For Building Construction Work',
               pOne: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -15,7 +15,7 @@ import { ref } from 'vue';
             {
               tag: 'Bedroom',
               head: 'Let`s Get Solution for Building Construction Work Bedroom',
-              urlOne: '/images/blog-datails-kitchen-1.jpg',
+              urlOne: '/interno-vue/images/blog-datails-kitchen-1.jpg',
               date: '27 December,2022',
               heading: 'Let`s Get Solution For Building Construction Work Bedroom',
               pOne: 'Bedroom dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -27,7 +27,7 @@ import { ref } from 'vue';
             {
               tag: 'Building',
               head: 'Let`s Get Solution for Building Construction Work Building',
-              urlOne: '/images/blog-datails-kitchen-1.jpg',
+              urlOne: '/interno-vue/images/blog-datails-kitchen-1.jpg',
               date: '27 December,2022',
               heading: 'Let`s Get Solution For Building Construction Work Building',
               pOne: 'Building dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -39,7 +39,7 @@ import { ref } from 'vue';
             {
               tag: 'Architecture',
               head: 'Let`s Get Solution for Building Construction Work Architecture',
-              urlOne: '/images/blog-datails-kitchen-1.jpg',
+              urlOne: '/interno-vue/images/blog-datails-kitchen-1.jpg',
               date: '27 December,2022',
               heading: 'Let`s Get Solution For Building Construction Work Architecture',
               pOne: 'Architecture dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -51,7 +51,7 @@ import { ref } from 'vue';
             {
               tag: 'Kitchen Planning',
               head: 'Let`s Get Solution for Kitchen Planning',
-              urlOne: '/images/blog-datails-kitchen-1.jpg',
+              urlOne: '/interno-vue/images/blog-datails-kitchen-1.jpg',
               date: '27 December,2022',
               heading: 'Let`s Get Solution For Building Kitchen Planning',
               pOne: 'Kitchen Planning, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
@@ -63,13 +63,13 @@ import { ref } from 'vue';
             {
               tag: 'Bathroom',
               head: 'Let`s Get Solution for Bathroom',
-              urlOne: '/images/blog-datails-kitchen-1.jpg',
+              urlOne: '/interno-vue/images/blog-datails-kitchen-1.jpg',
               date: '27 December,2022',
               heading: 'Let`s Get Solution For Building Bathroom',
               pOne: 'Bathroom, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don`t look even slightly believable.',
               pTwo: 'Bathroom in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.',
               subHeading: 'Design sprints are Bathroom',
-              urlTwo: '/images/blog-datails-kitchen-2.jpg',
+              urlTwo: '/interno-vue/images/blog-datails-kitchen-2.jpg',
               pLast: 'Bathroom sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             },
          ];
