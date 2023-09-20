@@ -123,7 +123,7 @@
 
 <template>
        <div class="blog__items" >
-           <div class="blog__item" v-for="article in articles" :key="article.id">
+           <div class="blog__item" v-for="article in paginatedProducts" :key="article.id">
                <div class="blog__item__top">
                    <img :src="article.url" :alt="article.tag">
                    <div class="blog__item__tag">
